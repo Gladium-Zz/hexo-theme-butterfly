@@ -28,10 +28,10 @@ const flinkFn = (args, content) => {
               <div class="flink-item-desc" title="${j.descr}">${j.descr}</div>
             </a>
           </div>`
-    })
+    });
 
     result += `${className}${classDesc} <div class="flink-list">${listResult}</div>`
-  })
+  });
 
   return `<div class="flink">${result}</div>`
 }
