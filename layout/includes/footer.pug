@@ -4,10 +4,10 @@
     - var nowYear = now.getFullYear()
     if theme.footer.owner.since && theme.footer.owner.since != nowYear
       //.copyright!= `&copy;${theme.footer.owner.since} - ${nowYear} By ${config.author}`
-      .copyright!= `<a href="${config.url}"><img src="https://img.shields.io/static/v1?label=${config.author}&message=%C2%A9${theme.footer.owner.since} - ${nowYear}&color=orange"></a>`
+      .copyright!= `<a href="${config.url}"><img src="https://img.shields.io/static/v1?label=${config.author}&message=&copy;${theme.footer.owner.since} - ${nowYear}&color=orange"></a>`
     else
       //.copyright!= `&copy;${nowYear} By ${config.author}`
-      .copyright!= `<a href="${config.url}"><img src="https://img.shields.io/static/v1?label=${config.author}&message=%C2%A9${nowYear}&color=orange"></a>`
+      .copyright!= `<a href="${config.url}"><img src="https://img.shields.io/static/v1?label=${config.author}&message=&copy;${nowYear}&color=orange"></a>`
   if theme.footer.copyright
     .framework-info
       span= _p('footer.framework') + ' '
