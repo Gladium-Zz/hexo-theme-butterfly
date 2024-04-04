@@ -32,7 +32,7 @@ hexo.extend.filter.register('before_post_render', data => {
     coverVal = randomCover // update coverVal
   }
 
-  if (coverVal && (coverVal.indexOf('//') !== -1 || imgTestReg.test(coverVal))) {
+  if (coverVal && (coverVal.toString().indexOf('//') !== -1 || imgTestReg.test(coverVal))) {
     data.cover_type = 'img'
   }
 
